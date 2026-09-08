@@ -6,32 +6,120 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Full name -->
-    <h1>Kodirov Samir</h1>
-    <br />
-    <!-- Contact information & own photo -->
-    <address>
-      <!-- Left side -->
-      <div>
-        Email: <a href="">kodirovsamir174@gmail.com</a>
-        Phone: +93 677 28 58
-      </div>
-      <img src="./picture/formal photograph.jpg" alt="author picture" />
-      <!-- Right Side -->
-      <div>Telegram: <a href="https://t.me/samirqodirov">@samirqodirov</a></div>
-      <div>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/samir-kodirov-7a4686394/"
-          >Samir Kodirov</a
-        >
-      </div>
-    </address>
+    <header>
+      <!-- Full name -->
+      <h1>Kodirov Samir</h1>
+      <br />
+      <!-- Contact information & own photo -->
+      <address>
+        <!-- Left side -->
+        <div>
+          Email: <a href="">kodirovsamir174@gmail.com</a>
+          Phone: +93 677 28 58
+        </div>
+        <img src="./picture/formalPhotograph.jpg" alt="author picture" />
+        <!-- Right Side -->
+        <div>
+          Telegram: <a href="https://t.me/samirqodirov">@samirqodirov</a>
+        </div>
+        <div>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/samir-kodirov-7a4686394/"
+            >Samir Kodirov</a
+          >
+        </div>
+      </address>
+    </header>
     <br />
     <!-- Self-Introduction -->
-    <p>
-      My aim to become an expert at software engineering. I am a very
-      purposeful. Despite not having work experience I have completed multiple
-      pet projects, and I am willing to learn more about frontend
-    </p>
+    <main>
+      <section>
+        <p>
+          My aim to become an expert at software engineering. I am a very
+          purposeful. Despite not having work experience I have completed
+          multiple pet projects, and I am willing to learn more about frontend
+        </p>
+      </section>
+      <section>
+        <h3>My skills:</h3>
+        <ul>
+          <li>Languages: HTML, CSS, JavaSript(TypeSript)</li>
+          <li>Frameworks and libraries: React.js</li>
+          <li>Styles: Taiwlind CSS, Bootstrap</li>
+          <li>Tools: Git, GitHub, VS Code, Vite, npm</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Code Example</h3>
+        <pre><code>function firstNonRepeatingLetter(s) {
+  for (let i = 0; i &lt; s.length; i++) {
+    let count = 0;
+    for (let j = 0; j &lt; s.length; j++) {
+      if (s[i].toLowerCase() === s[j].toLowerCase()) {
+        count++;
+      }
+    }
+    if (count === 1) {
+      return s[i];
+    }
+  }
+  return "";
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>Work Experience(educational projects)</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/Kodirov2samir/shop.co"
+              >Shop.co, Online shop</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Kodirov2samir/typescript_learn">
+              A set of topics with explanations required to know for TypeScript
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>
+            First year student at Westminster International Univerisity in
+            Tashkent
+          </li>
+          <li>Completed local course on frontend</li>
+        </ul>
+      </section>
+      <section>
+        <h2>English level</h2>
+        <p>Advanced. IELTS 7.0(C1)</p>
+      </section>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              Github:
+              <a href="https://github.com/Kodirov2samir"
+                ><img src="./picture//githubLogo.webp" alt="gitHub logo"
+              /></a>
+            </li>
+            <li>Created in 2026</li>
+            <li>
+              <img
+                src="./picture//rsSchoolLogo.png"
+                alt="Rolling scopes logo"
+              />
+            </li>
+            <li>
+              <a href="https://rs.school/courses/short-track"
+                >Rolling scopes short track js course</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
   </body>
 </html>
