@@ -25,7 +25,7 @@ h1 {
   width: 20px;
   height: 20px;
 }
-/* Header */
+
 .site-header {
   display: flex;
   align-items: center;
@@ -44,9 +44,6 @@ h1 {
   border-radius: 50%;
 }
 .personal-info {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
 }
 .site-header-list {
   display: flex;
@@ -76,7 +73,124 @@ h1 {
   background-color: #2d5958;
   color: white;
 }
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260, 1fr));
+}
+#contact {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+#contact h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2d5958;
+  padding-bottom: 8px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-left: 5px solid #2d5958;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.contact-label {
+  color: #2d5958;
+  margin-right: 8px;
+  min-width: 75px;
+}
+.contact-item a {
+  color: #174c47;
+}
+.contact-about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-about-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+#contact,
+#about {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #f7faf9;
+  border-left: 4px solid #2d5958;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #174c47;
+  margin-right: 8px;
+  min-width: 70px;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #174c47;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ebf2f2;
+  padding-bottom: 5px;
+}
+
+pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
 @media only screen and (max-width: 580px) {
   .profile-photo {
     width: 130px;
@@ -84,5 +198,14 @@ h1 {
   }
   .site-navigation-list {
     font-size: 10px;
+  }
+  #contact {
+    margin: 25px auto;
+  }
+  .contact-list {
+    gap: 10px;
+  }
+  .contact-item {
+    padding: 10px 14px;
   }
 }
