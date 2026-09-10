@@ -18,42 +18,9 @@
     />
   </head>
   <body>
-    <header>
-      <!-- Full name -->
-      <h1>Kodirov Samir</h1>
-      <!-- Contact information & own photo -->
-      <address>
-        <!-- Left side -->
-        <ul>
-          <li>
-            <img
-              class="rounded-img profile-photo"
-              src="./picture/formalPhotograph.jpg"
-              alt="author picture"
-            />
-          </li>
-          <li>
-            Email:
-            <a href="mailto:kodirovsamir174@gmail.com"
-              >kodirovsamir174@gmail.com</a
-            >
-            Phone: +93 677 28 58
-          </li>
-          <!-- Right Side -->
-          <li>
-            Telegram: <a href="https://t.me/samirqodirov">@samirqodirov</a>
-          </li>
-          <li>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/samir-kodirov-7a4686394/"
-              >Samir Kodirov</a
-            >
-          </li>
-          <li>Discord nickname: samir09132</li>
-        </ul>
-      </address>
-      <nav>
-        <ul>
+    <header class="site-header">
+      <nav class="site-navigation">
+        <ul class="site-navigation-list">
           <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#code">Code Example</a></li>
@@ -62,9 +29,50 @@
           <li><a href="#english">English</a></li>
         </ul>
       </nav>
+      <!-- Full name -->
+      <div class="photo-name-wrap">
+        <span class="profile-picture-wrap">
+          <img
+            class="rounded-img profile-photo"
+            src="./picture/formalPhotograph.jpg"
+            alt="author picture"
+          />
+        </span>
+        <h1>
+          <span style="color: #688b88">Kodirov</span>
+          <span style="color: #174c47">Samir</span>
+        </h1>
+      </div>
+      <!-- Contact information & own photo -->
     </header>
     <!-- Self-Introduction -->
     <main>
+      <section>
+        <h2>Contact:</h2>
+        <address class="personal-info">
+          <!-- Left side -->
+          <ul class="site-header-list">
+            <li>
+              Email:
+              <a href="mailto:kodirovsamir174@gmail.com"
+                >kodirovsamir174@gmail.com</a
+              >
+            </li>
+            <li>Phone: +93 677 28 58</li>
+            <!-- Right Side -->
+            <li>
+              Telegram: <a href="https://t.me/samirqodirov">@samirqodirov</a>
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/samir-kodirov-7a4686394/"
+                >Samir Kodirov</a
+              >
+            </li>
+            <li>Discord nickname: samir09132</li>
+          </ul>
+        </address>
+      </section>
       <section id="about">
         <h2>About me</h2>
         <p>
@@ -135,12 +143,19 @@
         <li>
           Github:
           <a href="https://github.com/Kodirov2samir"
-            ><img src="./picture/githubLogo.webp" alt="gitHub logo"
+            ><img
+              class="icon-img"
+              src="./picture/githubLogo.webp"
+              alt="gitHub logo"
           /></a>
         </li>
         <li>Created in 2026</li>
         <li>
-          <img src="./picture/rsSchoolLogo.png" alt="Rolling scopes logo" />
+          <img
+            class="icon-img"
+            src="./picture/rsSchoolLogo.png"
+            alt="Rolling scopes logo"
+          />
         </li>
         <li>
           <a href="https://rs.school/courses/short-track"

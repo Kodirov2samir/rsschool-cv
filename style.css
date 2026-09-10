@@ -8,24 +8,81 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  background-color: #ebf2f2;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 ul {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 h1 {
   text-align: center;
   font-size: clamp(2rem, 5vw + 1rem, 4rem);
 }
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
 .profile-photo {
-  width: 110px;
-  max-height: 150px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid gray;
+  padding: 10px;
 }
 .rounded-img {
   border-radius: 50%;
+}
+.personal-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.site-header-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.photo-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.profile-picture-wrap {
+  background-color: #2d5958;
+  padding: 20px;
+  border-radius: 50%;
+}
+.site-navigation {
+  width: 100%;
+}
+.site-navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  background-color: #2d5958;
+  color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  .profile-photo {
+    width: 130px;
+    height: 130px;
+  }
+  .site-navigation-list {
+    font-size: 10px;
+  }
 }
